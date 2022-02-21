@@ -1,6 +1,6 @@
 ﻿namespace ConceptsPOO
 {
-    public abstract class Employee
+    public abstract class Employee : IPay
     {
         public int Id { get; set; }
 
@@ -18,7 +18,7 @@
 
         public override string ToString()
         {
-            return $"Id: {Id}, " +
+            return $"Id: {Id}, "+
                 $"Name: {FirsName}, " +
                 $"LastName: {LastName}, " +
                 $"Birth: {BisthDate}, " +

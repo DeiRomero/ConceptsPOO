@@ -12,7 +12,7 @@
         public override string ToString()
         {
             return $"{base.ToString()}" +
-                $"\n\t Value to pay:.........{GetValueToPay():C2}";
+                $"\n\tValue to pay.........:   {GetValueToPay():C2}";
         }
     }
 }

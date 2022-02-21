@@ -6,12 +6,12 @@
         public decimal Sales { get; set; }
         public override decimal GetValueToPay()
         {
-            return Sales * (decimal)CommissionPercentaje;
+            return Sales * (decimal)CommissionPercentaje; 
         }
         public override string ToString()
         {
             return $"{base.ToString()}" +
-                $"\n\tCommssion Percentaje: {$"{CommissionPercentaje:P2}", 18}" +
+                $"\n\tCommission Percentaje:{$"{CommissionPercentaje:P2}", 18}" +
                 $"\n\tSales................:{$"{Sales:C2}", 18}" +
                 $"\n\tValue to pay.........:{$"{GetValueToPay():C2}", 18}";
         }
